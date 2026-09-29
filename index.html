@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafeSignal — Plataforma de Seguridad Urbana Inteligente con IA e IoT</title>
+  <meta name="description" content="SafeSignal protege a estudiantes y trabajadores con alertas SOS instantáneas, seguimiento inteligente de rutas y vinculación de dispositivos IoT en Lima Metropolitana." />
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg" />
+  <link rel="stylesheet" href="assets/styles/app.css" />
+  <link rel="stylesheet" href="assets/styles/index.css" />
+</head>
+<body class="landing-page">
+
+  <!-- Header / Top Navigation -->
+  <header class="top-nav">
+    <div class="top-nav__container">
+      <a href="index.html" class="top-nav__brand">
+        <img src="assets/images/logo.jpg" alt="SafeSignal Logo" />
+        <span>SafeSignal</span>
+      </a>
+
+      <nav class="top-nav__links">
+        <a href="#features">Características</a>
+        <a href="#how">Cómo Funciona</a>
+        <a href="#pricing">Planes SaaS</a>
+        <a href="#testimonials">Testimonios</a>
+        <a href="#faq">Preguntas</a>
+      </nav>
+
+      <div class="top-nav__actions">
+        <button class="btn btn-sos btn-trigger-sos" style="padding: 8px 18px; font-size: 13.5px;">
+          🔴 Demo SOS
+        </button>
+        <a href="#pricing" class="btn btn-primary" style="padding: 8px 18px; font-size: 13.5px;">
+          Comenzar
+        </a>
+        <button class="mobile-menu-btn" aria-label="Abrir Menú">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__container">
+      <div class="hero__content">
+        <div class="hero__badge-wrapper">
+          <span class="badge badge--blue">
+            🛡️ Red de Seguridad Urbana Inteligente #1 en Lima
+          </span>
+        </div>
+        <h1 class="hero__title">
+          Tu seguridad en la ciudad, <span class="hero__title-highlight">siempre protegida</span>
+        </h1>
+        <p class="hero__subtitle">
+          SafeSignal acompaña a estudiantes universitarios y trabajadores nocturnos con alertas SOS inmediatas, seguimiento de recorridos en vivo, integración con dispositivos IoT y enlace directo con contactos de auxilio.
+        </p>
+        <div class="hero__actions">
+          <a href="#pricing" class="btn btn-primary" style="padding: 14px 30px; font-size: 15.5px;">
+            Crear Cuenta Gratis →
+          </a>
+          <button class="btn btn-sos btn-trigger-sos" style="padding: 14px 28px; font-size: 15px;">
+            🔴 Probar Alerta SOS (Demo)
+          </button>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat-item">
+            <span class="hero__stat-value">12,400+</span>
+            <span class="hero__stat-label">Ciudadanos protegidos</span>
+          </div>
+          <div class="hero__stat-item">
+            <span class="hero__stat-value">340 km</span>
+            <span class="hero__stat-label">Cobertura urbana en Lima</span>
+          </div>
+          <div class="hero__stat-item">
+            <span class="hero__stat-value">4.2 min</span>
+            <span class="hero__stat-label">Tiempo medio de auxilio</span>
+          </div>
+          <div class="hero__stat-item">
+            <span class="hero__stat-value">99.9%</span>
+            <span class="hero__stat-label">Disponibilidad SLA</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phone Mockup Preview -->
+      <div class="hero__mockup-wrapper">
+        <div class="hero__mockup-glow"></div>
+        <div class="phone-mockup">
+          <div class="phone-header__notch"></div>
+          <div class="phone-screen">
+            <div class="phone-status-pill">
+              <span class="dot pulse-active"></span>
+              <span>Monitoreo Activo: Zona Segura</span>
+            </div>
+
+            <div class="phone-card">
+              <div class="phone-card__title">Incidentes reportados hoy en tu distrito</div>
+              <div class="phone-card__value">12 <span style="font-size: 13px; font-weight: 500; color: #94a3b8;">en 5 km²</span></div>
+            </div>
+
+            <div class="phone-grid-2">
+              <div class="phone-subcard">
+                <div class="phone-subcard__lbl">Tiempo de Auxilio</div>
+                <div class="phone-subcard__val">4.2 min</div>
+              </div>
+              <div class="phone-subcard">
+                <div class="phone-subcard__lbl">Rutas Verificadas</div>
+                <div class="phone-subcard__val">98% Ok</div>
+              </div>
+            </div>
+
+            <div class="phone-subcard" style="margin-bottom: 18px;">
+              <div class="phone-subcard__lbl">Red de Apoyo Conectada</div>
+              <div class="phone-subcard__val" style="font-size: 13px; font-weight: 600;">
+                🟢 3 Contactos & Serenazgo Vinculados
+              </div>
+            </div>
+
+            <button class="phone-sos-btn btn-trigger-sos" aria-label="Activar Alerta SOS">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <span>SOS — EMERGENCIAS</span>
+            </button>
+            <p style="text-align: center; font-size: 10px; color: rgba(255,255,255,0.45); margin-top: 10px;">
+              Haz clic para simular el protocolo de auxilio en tiempo real
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem & Context Section -->
+  <section class="section problem-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Problema y Contexto</span>
+        <h2 class="section-title">Por qué diseñamos SafeSignal</h2>
+        <p class="section-subtitle">
+          El retorno nocturno a casa desde la universidad o el centro laboral no debería ser una experiencia de incertidumbre. Transformamos la vulnerabilidad en protección activa.
+        </p>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="problem-card__number">78%</div>
+          <h3>Percepción de Inseguridad Nocturna</h3>
+          <p>La mayoría de estudiantes y trabajadores transitan por paraderos poco iluminados y rutas aisladas sin contar con un canal inmediato para solicitar auxilio.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-card__number">&lt; 5 min</div>
+          <h3>La Ventana Crítica de Respuesta</h3>
+          <p>Ante una situación de acoso, robo o riesgo inminente, cada segundo cuenta. SafeSignal transmite la geolocalización precisa a tu círculo en menos de 3 segundos.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-card__number">3x</div>
+          <h3>Efectividad con IoT e IA</h3>
+          <p>La combinación de botones físicos portátiles, algoritmos de detección de desvíos en rutas y reportes colaborativos reduce drásticamente el tiempo de atención.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section features-section" id="features">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Capacidades del Sistema</span>
+        <h2 class="section-title">Tecnología centrada en tu protección</h2>
+        <p class="section-subtitle">
+          Una suite integral de seguridad que articula aplicaciones web y móviles, inteligencia artificial y sensores IoT para garantizar tu bienestar.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon-box feature-icon-box--red">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>Alertas SOS y Alerta Silenciosa</h3>
+          <p>Dispara una emergencia visible o activa el modo discreto sin alertar al agresor. Notifica a tus contactos y genera una alerta prioritaria en el sistema.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon-box feature-icon-box--blue">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+            </svg>
+          </div>
+          <h3>Mapa de Riesgo y Calor en Vivo</h3>
+          <p>Visualiza incidentes reportados en tiempo real, sectores con baja iluminación y zonas de riesgo para tomar decisiones preventivas en tu trayecto.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon-box feature-icon-box--green">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <h3>Seguimiento Inteligente de Rutas</h3>
+          <p>Comparte tu desplazamiento en vivo. Nuestra plataforma detecta detenciones inesperadas o desvíos anómalos y dispara un check-in de seguridad automático.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon-box feature-icon-box--purple">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3>Red de Apoyo y Contactos Confiables</h3>
+          <p>Gestiona a tus familiares y amigos cercanos. En caso de SOS, reciben SMS y notificaciones push con tus coordenadas exactas y ruta de escape.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <div class="feature-icon-box feature-icon-box--amber">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+              <rect x="9" y="9" width="6" height="6"/>
+              <line x1="9" y1="1" x2="9" y2="4"/>
+              <line x1="15" y1="1" x2="15" y2="4"/>
+              <line x1="9" y1="20" x2="9" y2="23"/>
+              <line x1="15" y1="20" x2="15" y2="23"/>
+            </svg>
+          </div>
+          <h3>Dispositivos IoT y Botón Físico</h3>
+          <p>Soporte para botones Bluetooth discretos y pulseras inteligentes que permiten activar el auxilio sin necesidad de sacar el teléfono del bolsillo.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card">
+          <div class="feature-icon-box feature-icon-box--navy">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
+          </div>
+          <h3>Reportes Validados por la Comunidad</h3>
+          <p>Reporta incidentes de alumbrado, robos o situaciones sospechosas con validación comunitaria, alimentando el mapa preventivo de la ciudad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="section how-section" id="how">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Flujo Sencillo</span>
+        <h2 class="section-title">Comienza en 3 sencillos pasos</h2>
+        <p class="section-subtitle">
+          Diseñado para ser intuitivo y rápido, para que la tecnología trabaje por tu tranquilidad en cualquier momento.
+        </p>
+      </div>
+
+      <div class="steps-container">
+        <div class="step-card">
+          <div class="step-circle">1</div>
+          <h3>Crea tu Perfil Seguro</h3>
+          <p>Regístrate en menos de 2 minutos, configura tus zonas frecuentes (universidad, trabajo, hogar) y tus preferencias de alerta.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-circle">2</div>
+          <h3>Vincula tus Contactos e IoT</h3>
+          <p>Agrega a tus personas de confianza y empareja tus pulseras o botones físicos mediante Bluetooth de bajo consumo.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-circle">3</div>
+          <h3>Desplázate con Tranquilidad</h3>
+          <p>Inicia un recorrido asistido o activa el botón SOS con un solo toque en caso de percibir cualquier amenaza.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SaaS Pricing & SLA Section (Persona 3 - Section 5.2.4 SaaS Agreement) -->
+  <section class="section pricing-section" id="pricing">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Acuerdo de Servicio - SaaS (Sección 5.2.4)</span>
+        <h2 class="section-title">Planes flexibles según tus necesidades</h2>
+        <p class="section-subtitle">
+          Ofrecemos modelos de suscripción bajo modalidad Software as a Service (SaaS), con garantías de disponibilidad (SLA), soporte técnico y alta resiliencia.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Plan 1 -->
+        <div class="pricing-card">
+          <span class="pricing-plan-name">Básico Ciudadano</span>
+          <div class="pricing-price-box">
+            <span class="pricing-price-currency">S/</span>
+            <span class="pricing-price-amount">0</span>
+            <span class="pricing-price-period">/ gratis siempre</span>
+          </div>
+          <p class="pricing-desc">Para usuarios que desean una capa esencial de auxilio y reporte en la ciudad.</p>
+          <div class="pricing-features">
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Alerta SOS estándar geolocalizada</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Hasta 3 contactos de emergencia</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Visualización de mapa de riesgo comunitario</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Reporte ciudadano de incidentes</span>
+            </div>
+          </div>
+          <button class="btn btn-outline" style="width: 100%;">Comenzar Gratis</button>
+          <div class="pricing-sla-box">
+            <span>⏱️ Soporte comunitario estándar (48h)</span>
+          </div>
+        </div>
+
+        <!-- Plan 2 (Popular) -->
+        <div class="pricing-card pricing-card--popular">
+          <span class="pricing-badge-popular">Más Recomendado</span>
+          <span class="pricing-plan-name" style="color: var(--primary);">SafeSignal Pro</span>
+          <div class="pricing-price-box">
+            <span class="pricing-price-currency">S/</span>
+            <span class="pricing-price-amount">9.90</span>
+            <span class="pricing-price-period">/ mes</span>
+          </div>
+          <p class="pricing-desc">Ideal para estudiantes universitarios y colaboradores con traslados nocturnos frecuentes.</p>
+          <div class="pricing-features">
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <strong>Alertas SOS Ilimitadas + Modo Silencioso</strong>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Hasta 10 contactos de auxilio prioritario</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Seguimiento de rutas asistido por IA</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Vinculación ilimitada de dispositivos IoT</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Canal SMS de respaldo (sin consumir datos)</span>
+            </div>
+          </div>
+          <button class="btn btn-primary" style="width: 100%;">Probar 14 Días Gratis</button>
+          <div class="pricing-sla-box">
+            <span>🛡️ SLA 99.9% de uptime garantizado por contrato</span>
+          </div>
+        </div>
+
+        <!-- Plan 3 (Institutional) -->
+        <div class="pricing-card">
+          <span class="pricing-plan-name">Municipal & Campus</span>
+          <div class="pricing-price-box">
+            <span class="pricing-price-amount" style="font-size: 32px;">A Medida</span>
+            <span class="pricing-price-period">/ institucional</span>
+          </div>
+          <p class="pricing-desc">Para serenazgos distritales, empresas de seguridad privada y universidades.</p>
+          <div class="pricing-features">
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Consola central de despacho de emergencias</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Integración API REST con sistemas de Serenazgo / PNP</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Métricas de tiempo de respuesta y mapas de calor</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Soporte 24/7/365 con tiempo de respuesta &lt; 15 min</span>
+            </div>
+          </div>
+          <button class="btn btn-outline" style="width: 100%;">Contactar Especialista</button>
+          <div class="pricing-sla-box">
+            <span>⚡ SLA 99.95% con penalizaciones por indisponibilidad</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Validación de Usuarios</span>
+        <h2 class="section-title">Confianza comprobada en la comunidad</h2>
+        <p class="section-subtitle">
+          Resultados de nuestras entrevistas y pruebas de campo con estudiantes universitarios y trabajadores de Lima.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "Salgo de clases de la universidad pasadas las 10 de la noche en San Isidro. El seguimiento en vivo y saber que con el botón de mi pulsera puedo emitir una alerta me da la tranquilidad que antes no tenía."
+          </p>
+          <div class="testimonial-user">
+            <div class="testimonial-avatar">VM</div>
+            <div>
+              <div class="testimonial-name">Valeria Mendoza</div>
+              <div class="testimonial-role">Estudiante Universitaria UPC</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "Trabajo en turnos nocturnos en el rubro gastronómico en Miraflores. El mapa de calor me avisa qué calles tienen incidentes recientes para cambiar mi camino hacia el paradero del Metropolitano."
+          </p>
+          <div class="testimonial-user">
+            <div class="testimonial-avatar">CR</div>
+            <div>
+              <div class="testimonial-name">Carlos Ramírez</div>
+              <div class="testimonial-role">Diseñador y Colaborador Nocturno</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "El soporte del botón físico IoT es un acierto total. No tienes que desbloquear el teléfono en plena calle oscura; simplemente presionas dos veces y tus contactos reciben tu ubicación al instante."
+          </p>
+          <div class="testimonial-user">
+            <div class="testimonial-avatar">SG</div>
+            <div>
+              <div class="testimonial-name">Sofía Guerrero</div>
+              <div class="testimonial-role">Usuaria de SafeSignal Pro</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section faq-section" id="faq">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Dudas Frecuentes</span>
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+        <p class="section-subtitle">
+          Todo lo que necesitas saber sobre el funcionamiento, privacidad y tecnología de SafeSignal.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>¿Cómo funciona la Alerta Silenciosa?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            La Alerta Silenciosa se activa discretamente mediante toques específicos o el botón IoT físico. La pantalla del teléfono permanece apagada o simula una app común, mientras el sistema envía en segundo plano tus coordenadas GPS continuas a tu red de auxilio.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué dispositivos IoT son compatibles con la plataforma?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            SafeSignal es compatible con pulseras inteligentes estándar Bluetooth BLE, llaveros SOS con botones de pánico y dispositivos con conectividad LoRaWAN / GSM diseñados para nuestra red.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo se protegen mis datos de ubicación y privacidad?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            La privacidad es un pilar fundamental. SafeSignal solo transmite tu ubicación exacta cuando activas voluntariamente un recorrido asistido o disparas una alerta SOS. Todos los datos viajan cifrados bajo estándar TLS 1.3 y cumplimos con la Ley N° 29733 de Protección de Datos Personales en el Perú.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué garantías ofrece el Acuerdo de Servicio SaaS (SLA)?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            Garantizamos un 99.9% de uptime mensual para el backend de procesamiento de alertas críticas, respaldado por servidores en la nube con balanceo de carga automático y réplica de datos en tiempo real.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="section-inner">
+      <h2 class="cta-banner__title">¿Listo para transformar tu seguridad al transitar?</h2>
+      <p class="cta-banner__subtitle">
+        Únete hoy a la comunidad SafeSignal y siéntete respaldado en cada paso por la ciudad.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="#pricing" class="btn btn-white">
+          Empezar Ahora Gratis
+        </a>
+        <button class="btn btn-sos btn-trigger-sos">
+          🔴 Probar Demo SOS
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="landing-footer">
+    <div class="section-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/images/logo.jpg" alt="SafeSignal Logo" />
+          <p>
+            SafeSignal es una plataforma de software orientada a la seguridad ciudadana inteligente, integrando IA, IoT y telemetría de rutas para estudiantes y trabajadores urbanos.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Producto</h4>
+          <ul>
+            <li><a href="#features">Características</a></li>
+            <li><a href="#how">Cómo Funciona</a></li>
+            <li><a href="#pricing">Planes SaaS</a></li>
+            <li><a href="#faq">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Plataforma & Repos</h4>
+          <ul>
+            <li><a href="https://github.com/DEJAMICE/landing-page" target="_blank" rel="noopener">Landing Page Repo</a></li>
+            <li><a href="https://github.com/DEJAMICE/frontend-web" target="_blank" rel="noopener">Frontend Web App</a></li>
+            <li><a href="https://github.com/DEJAMICE/backend-api" target="_blank" rel="noopener">Backend REST API</a></li>
+            <li><a href="https://github.com/DEJAMICE" target="_blank" rel="noopener">Organización DEJAMICE</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal & Acuerdo</h4>
+          <ul>
+            <li><a href="#pricing">Términos de Servicio (SaaS)</a></li>
+            <li><a href="#pricing">Política de Privacidad</a></li>
+            <li><a href="#pricing">Acuerdo de Nivel de Servicio (SLA)</a></li>
+            <li><a href="#pricing">Soporte Técnico</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span id="currentYear">2026</span> SafeSignal — Proyecto desarrollado por la Organización <strong>DEJAMICE</strong> para el curso Diseño de Experimentos de Software (UPC).
+        </div>
+        <div>
+          Desplegado en <strong>GitHub Pages</strong>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive SOS Emergency Modal -->
+  <div class="sos-modal-overlay" id="sosModal" role="dialog" aria-modal="true" aria-labelledby="sosModalTitle">
+    <div class="sos-modal">
+      <div class="sos-modal__icon pulse-danger">🚨</div>
+      <h2 class="sos-modal__title" id="sosModalTitle">Simulación de Alerta SOS</h2>
+      <div id="sosStatusBadge" class="badge badge--red pulse-danger" style="margin-bottom: 16px;">
+        Emitiendo señal de auxilio a la central...
+      </div>
+      
+      <div class="sos-modal__info">
+        <div class="sos-modal__info-row">
+          <span>Latitud / Longitud:</span>
+          <span>-12.0864, -77.0321 (Lima)</span>
+        </div>
+        <div class="sos-modal__info-row">
+          <span>Precisión GPS:</span>
+          <span>± 3.2 metros</span>
+        </div>
+        <div class="sos-modal__info-row">
+          <span>Dispositivo emisor:</span>
+          <span>SafeSignal IoT Tag v2.4</span>
+        </div>
+        <div class="sos-modal__info-row">
+          <span>Destinatarios:</span>
+          <span>Central Serenazgo + 3 Contactos</span>
+        </div>
+        <div class="sos-modal__info-row">
+          <span>Cuenta regresiva de envío:</span>
+          <span id="sosTimerCount" style="color: var(--sos); font-size: 16px; font-weight: 800;">5</span>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" id="cancelSosBtn" style="width: 100%;">
+        Cancelar Alerta (5s)
+      </button>
+    </div>
+  </div>
+
+  <script src="assets/scripts/index.js"></script>
+</body>
+</html>
