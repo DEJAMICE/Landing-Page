@@ -8,14 +8,13 @@ SafeSignal es una plataforma integral orientada a la seguridad ciudadana intelig
 
 ---
 
-## 🌐 Despliegue en Vivo
+## Despliegue en Vivo
 
-El sitio web público y optimizado para evaluación se encuentra disponible en:
-👉 **[https://dejamice.github.io/landing-page/](https://dejamice.github.io/landing-page/)**
+El sitio web público y optimizado para evaluación se encuentra disponible en: **[https://dejamice.github.io/Landing-Page/](https://dejamice.github.io/Landing-Page/)**
 
 ---
 
-## 🚀 Arquitectura del Ecosistema (Polyrepo)
+## Arquitectura del Ecosistema (Polyrepo)
 
 El proyecto SafeSignal se encuentra estructurado bajo una arquitectura de múltiples repositorios especializados dentro de la organización **[DEJAMICE](https://github.com/DEJAMICE)**:
 
@@ -28,7 +27,7 @@ El proyecto SafeSignal se encuentra estructurado bajo una arquitectura de múlti
 
 ---
 
-## 👥 Equipo de Desarrollo — Organización DEJAMICE
+## Equipo de Desarrollo — Organización DEJAMICE
 
 Proyecto desarrollado para el curso **Diseño de Experimentos de Software** (Universidad Peruana de Ciencias Aplicadas - UPC):
 
@@ -40,7 +39,7 @@ Proyecto desarrollado para el curso **Diseño de Experimentos de Software** (Uni
 
 ---
 
-## 🛡️ Características Principales de la Landing Page
+## Características Principales de la Landing Page
 
 1. **Simulación Interactiva de Alerta SOS**: Incorpora un modal en tiempo real que simula el protocolo de disparo de emergencia, geolocalización GPS y cuenta regresiva de despacho.
 2. **Planes de Servicio SaaS & SLA**: Presentación de modelos de suscripción (Ciudadano Gratuito, SafeSignal Pro y Municipal/Campus) vinculados al **Acuerdo de Nivel de Servicio (SLA 99.9%)** desarrollado en la sección 5.2.4 del informe.
@@ -49,7 +48,7 @@ Proyecto desarrollado para el curso **Diseño de Experimentos de Software** (Uni
 
 ---
 
-## 🌿 Metodología de GitFlow y Convenciones
+## Metodología de GitFlow y Convenciones
 
 En cumplimiento con los estándares de ingeniería de software del curso, este repositorio aplica la metodología **GitFlow**:
 
@@ -65,7 +64,7 @@ En cumplimiento con los estándares de ingeniería de software del curso, este r
 
 ---
 
-## 💻 Ejecución Local
+## Ejecución Local
 
 Para visualizar la Landing Page en un entorno local:
 
