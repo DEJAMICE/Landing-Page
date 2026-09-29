@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navy: #14284b;
+  --navy-light: #1e3a5f;
+  --navy-dark: #0b1a32;
+  --primary: #1d4ed8;
+  --primary-hover: #1e40af;
+  --sos: #dc2626;
+  --sos-hover: #b91c1c;
+  --sos-soft: #fee2e2;
+  --bg: #f8fafc;
+  --card-bg: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --border-light: #f1f5f9;
+  --green: #16a34a;
+  --green-soft: #dcfce7;
+  --yellow: #d97706;
+  --yellow-soft: #fef3c7;
+  --font-main: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Button styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-main);
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--navy);
+  color: #ffffff;
+  padding: 12px 24px;
+  font-size: 14.5px;
+  box-shadow: 0 4px 12px rgba(20, 40, 75, 0.15);
+}
+
+.btn-primary:hover {
+  background: var(--navy-light);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(20, 40, 75, 0.22);
+}
+
+.btn-sos {
+  background: var(--sos);
+  color: #ffffff;
+  padding: 12px 26px;
+  font-size: 14.5px;
+  font-weight: 700;
+  border-radius: 50px;
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.35);
+}
+
+.btn-sos:hover {
+  background: var(--sos-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(220, 38, 38, 0.45);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--navy);
+  border: 1.5px solid var(--navy);
+  padding: 11px 22px;
+  font-size: 14px;
+}
+
+.btn-outline:hover {
+  background: var(--navy);
+  color: #ffffff;
+}
+
+.btn-white {
+  background: #ffffff;
+  color: var(--navy);
+  padding: 13px 28px;
+  font-size: 15px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.btn-white:hover {
+  background: #f8fafc;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  letter-spacing: 0.02em;
+}
+
+.badge--blue {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+.badge--green {
+  background: var(--green-soft);
+  color: var(--green);
+  border: 1px solid #bbf7d0;
+}
+
+.badge--red {
+  background: var(--sos-soft);
+  color: var(--sos);
+  border: 1px solid #fecaca;
+}
+
+/* Animations */
+@keyframes pulseGlow {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+
+@keyframes pulseRed {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 12px rgba(220, 38, 38, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+}
+
+.pulse-active {
+  animation: pulseGlow 2s infinite;
+}
+
+.pulse-danger {
+  animation: pulseRed 1.8s infinite;
+}
