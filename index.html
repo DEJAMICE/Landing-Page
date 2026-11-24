@@ -8,6 +8,17 @@
   <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg" />
   <link rel="stylesheet" href="assets/styles/app.css" />
   <link rel="stylesheet" href="assets/styles/index.css" />
+  <!-- Google Analytics 4 + Consent Mode (default denied per Ley N.° 29733) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { window.dataLayer.push(arguments); }
+    gtag('consent', 'default', { analytics_storage: 'denied' });
+    gtag('js', new Date());
+    // Reemplazar G-XXXXXXXXXX con el Measurement ID real de la propiedad GA4 del equipo
+    if (window.SECURANET_GA_ID) {
+      gtag('config', window.SECURANET_GA_ID, { anonymize_ip: true });
+    }
+  </script>
 </head>
 <body class="landing-page">
 
@@ -28,10 +39,10 @@
       </nav>
 
       <div class="top-nav__actions">
-        <a href="https://dejamice.github.io/Frontend-web/#/login" class="btn btn-outline" style="padding: 8px 16px; font-size: 13.5px; border-color: #00A896; color: #00A896;">
+        <a href="https://dejamice.github.io/Frontend-web/#/login" data-cta="nav_login" class="btn btn-outline" style="padding: 8px 16px; font-size: 13.5px; border-color: #00A896; color: #00A896;">
           Iniciar Sesión
         </a>
-        <a href="https://dejamice.github.io/Frontend-web/#/registro" class="btn btn-primary" style="padding: 8px 18px; font-size: 13.5px;">
+        <a href="https://dejamice.github.io/Frontend-web/#/registro" data-cta="nav_signup" class="btn btn-primary" style="padding: 8px 18px; font-size: 13.5px;">
           Acceder a la Web App
         </a>
         <button class="mobile-menu-btn" aria-label="Abrir Menú">
@@ -61,10 +72,10 @@
           SafeSignal acompaña a estudiantes universitarios y trabajadores nocturnos con alertas SOS inmediatas, seguimiento de recorridos en vivo, integración con dispositivos IoT y enlace directo con contactos de auxilio.
         </p>
         <div class="hero__actions">
-          <a href="https://dejamice.github.io/Frontend-web/#/registro" class="btn btn-primary" style="padding: 14px 28px; font-size: 15.5px;">
+          <a href="https://dejamice.github.io/Frontend-web/#/registro" data-cta="hero_signup" class="btn btn-primary" style="padding: 14px 28px; font-size: 15.5px;">
             Crear Cuenta Gratis →
           </a>
-          <a href="https://dejamice.github.io/Frontend-web/#/login" class="btn btn-outline" style="padding: 14px 26px; font-size: 15px; border: 2px solid #00A896; color: #00A896; background: #FFFFFF;">
+          <a href="https://dejamice.github.io/Frontend-web/#/login" data-cta="hero_login" class="btn btn-outline" style="padding: 14px 26px; font-size: 15px; border: 2px solid #00A896; color: #00A896; background: #FFFFFF;">
             Iniciar Sesión
           </a>
           <button class="btn btn-sos btn-trigger-sos" style="padding: 14px 24px; font-size: 15px;">
@@ -337,7 +348,7 @@
               <span>Reporte ciudadano de incidentes</span>
             </div>
           </div>
-          <a href="https://dejamice.github.io/Frontend-web/#/registro" class="btn btn-outline" style="width: 100%; text-align: center; display: block;">Comenzar Gratis</a>
+          <a href="https://dejamice.github.io/Frontend-web/#/registro" data-cta="pricing_free" data-plan="free" class="btn btn-outline" style="width: 100%; text-align: center; display: block;">Comenzar Gratis</a>
           <div class="pricing-sla-box">
             <span>⏱️ Soporte comunitario estándar (48h)</span>
           </div>
@@ -533,7 +544,7 @@
         Únete hoy a la comunidad SafeSignal y siéntete respaldado en cada paso por la ciudad.
       </p>
       <div class="cta-banner__actions">
-        <a href="https://dejamice.github.io/Frontend-web/#/registro" class="btn btn-white">
+        <a href="https://dejamice.github.io/Frontend-web/#/registro" data-cta="cta_banner_signup" class="btn btn-white">
           Empezar Ahora Gratis
         </a>
         <button class="btn btn-sos btn-trigger-sos">
@@ -577,10 +588,10 @@
         <div class="footer-col">
           <h4>Legal & Acuerdo</h4>
           <ul>
-            <li><a href="#pricing">Términos de Servicio (SaaS)</a></li>
-            <li><a href="#pricing">Política de Privacidad</a></li>
+            <li><a href="#legalModal" data-open-legal>Términos de Servicio (SaaS)</a></li>
+            <li><a href="#legalModal" data-open-legal>Política de Privacidad</a></li>
             <li><a href="#pricing">Acuerdo de Nivel de Servicio (SLA)</a></li>
-            <li><a href="#pricing">Soporte Técnico</a></li>
+            <li><a href="#privacyConsentBanner" id="openConsentSettingsLink">Configurar privacidad</a></li>
           </ul>
         </div>
       </div>
@@ -634,6 +645,35 @@
     </div>
   </div>
 
+  <!-- Legal & Terms Modal (SaaS + Ley N.° 29733 + Ética ACM/IEEE/CIP) -->
+  <div class="sos-modal-overlay" id="legalModal" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle">
+    <div class="sos-modal" style="max-width: 580px; text-align: left;">
+      <h2 class="sos-modal__title" id="legalModalTitle" style="margin-bottom: 12px;">Términos de Servicio (SaaS) y Privacidad</h2>
+      <p style="font-size: 13.5px; color: #475569; line-height: 1.55; margin-bottom: 10px;">
+        <strong>1. Alcance y Seguridad:</strong> SafeSignal (SecuraNet) es una herramienta preventiva de apoyo ciudadano. No reemplaza a las líneas oficiales de emergencia (105 / 116) ni comparte alertas de simulacro con autoridades reales.
+      </p>
+      <p style="font-size: 13.5px; color: #475569; line-height: 1.55; margin-bottom: 10px;">
+        <strong>2. Protección de Datos (Ley N.º 29733):</strong> El seguimiento de ubicación solo opera cuando el usuario lo activa voluntariamente o dispara una alerta SOS. La analítica de mejora de producto utiliza identificadores seudonimizados y se mantiene desactivada salvo consentimiento expreso.
+      </p>
+      <p style="font-size: 13.5px; color: #475569; line-height: 1.55; margin-bottom: 16px;">
+        <strong>3. Responsabilidad Profesional (ACM/IEEE y CIP):</strong> El equipo DEJAMICE garantiza la transparencia en el uso de datos y el cumplimiento de SLA del plan SaaS contratado.
+      </p>
+      <button class="btn btn-primary" id="closeLegalModalBtn" style="width: 100%;">Entendido</button>
+    </div>
+  </div>
+
+  <!-- Banner de Consentimiento de Analítica (US26) -->
+  <div id="privacyConsentBanner" role="region" aria-label="Preferencias de privacidad" style="display: none; position: fixed; bottom: 16px; left: 16px; right: 16px; max-width: 680px; margin: 0 auto; z-index: 9999; background: #0E444E; color: #FFFFFF; padding: 14px 18px; border-radius: 12px; box-shadow: 0 12px 30px rgba(0,0,0,0.22); align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; font-size: 13px;">
+    <div style="flex: 1; min-width: 240px; line-height: 1.45;">
+      <strong>Tu privacidad importa (Ley N.º 29733):</strong> ¿Nos permites registrar métricas anónimas de uso para mejorar SafeSignal? No guardamos datos personales ni ubicación exacta.
+    </div>
+    <div style="display: flex; gap: 8px; flex-shrink: 0;">
+      <button type="button" id="denyAnalyticsBtn" class="btn btn-outline" style="padding: 8px 14px; font-size: 12.5px; color: #E2E8F0; border-color: rgba(255,255,255,0.35); background: transparent;">No, gracias</button>
+      <button type="button" id="acceptAnalyticsBtn" class="btn btn-primary" style="padding: 8px 14px; font-size: 12.5px;">Aceptar analítica</button>
+    </div>
+  </div>
+
+  <script src="assets/scripts/analytics.js"></script>
   <script src="assets/scripts/index.js"></script>
 </body>
 </html>
