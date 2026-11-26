@@ -509,6 +509,60 @@
   line-height: 1.65;
 }
 
+/* About the Product Video Section */
+.product-video-section {
+  background: #f1f5f9;
+  border-top: 1px solid var(--border);
+}
+
+.product-video-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: 0 20px 50px -15px rgba(15, 23, 42, 0.12);
+}
+
+.product-video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #0f172a;
+}
+
+.product-video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.product-video-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 14px 8px 4px;
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
+.product-video-caption a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.product-video-caption a:hover {
+  text-decoration: underline;
+}
+
 /* Pricing / SaaS SLA Section */
 .pricing-section {
   background: var(--bg);
